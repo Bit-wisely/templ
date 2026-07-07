@@ -356,13 +356,13 @@ a {
 }
 
 /* Top row: "Welcome to" left, "Club" right — spans exactly the title width,
-   so "Welcome to" sits above the "R" and "Club" above the "cs". */
+   so "Welcome to" sits flush to the left edge and "Club" flush to the right. */
 .hero-top-row {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
-    padding: 0 0.3vw 4px 0.3vw;
+    padding: 0 0 4px 0;
 }
 
 /* "Welcome to" — left-aligned, same weight/size as wishlabs */

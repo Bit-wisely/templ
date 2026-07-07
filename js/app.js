@@ -32,6 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Close the mobile nav panel whenever a nav item (incl. "Join Club") is tapped
+    const navItems = document.querySelectorAll('.nav-panel .nav-item');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            header.classList.remove('nav-open');
+        });
+    });
+
     // About Page Stats Count-Up Animation
     const stats = document.querySelectorAll('.stat-number');
     if (stats.length > 0) {
